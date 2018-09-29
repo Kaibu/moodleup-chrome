@@ -1,0 +1,35 @@
+{
+  "name": "moodleup",
+  "short_name": "moodleup",
+  "version": "1.0",
+  "description": "Various improvements to work faster with MoodleUP",
+  "manifest_version": 2,
+  "externally_connectable": {
+    "matches": [
+      "https://moodle2.uni-potsdam.de/*"
+    ]
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "https://moodle2.uni-potsdam.de/*",
+    "downloads"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://moodle2.uni-potsdam.de/course/view.php?id=*"
+      ],
+      "js": [
+        "resourceworkaround.js"
+      ]
+    }
+  ]
+}
