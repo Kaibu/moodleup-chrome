@@ -17,7 +17,7 @@ for (var i = 0; i < instances.length; i++) {
 
 //insert download function into DOM
 var code = 'function sendDownRequest(fileURL) {'
-  + '    chrome.runtime.sendMessage("kinidnbadjpdcjljcogaclcijgpnloff", {url: fileURL});'
+  + '    chrome.runtime.sendMessage("' + chrome.runtime.id + '", {url: fileURL});'
   + '}';
 
 var script = document.createElement('script');

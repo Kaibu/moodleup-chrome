@@ -1,7 +1,7 @@
 {
   "name": "moodleup",
   "short_name": "moodleup",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Various improvements to work faster with MoodleUP",
   "manifest_version": 2,
   "externally_connectable": {
